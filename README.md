@@ -1,7 +1,7 @@
 # gatsby-portfolio-test
 An example of a portfolio website built using Gatsby.
 
-View the demo: [gatsby-portfolio.surge.sh](gatsby-portfolio.surge.sh)
+View the demo: [gatsby-portfolio.surge.sh](http://gatsby-portfolio.surge.sh)
 
 Ensure you have the Gatsby CLI installed:
 ```
