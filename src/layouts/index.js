@@ -5,7 +5,7 @@ import styled, {injectGlobal} from 'styled-components'
 import { GridProvider, Grid, Row, Col } from 'zooper-grid'
 import * as theme from '../theme'
 
-import './index.css'
+import './normalize.css'
 
 class TemplateWrapper extends React.Component {
   constructor(){

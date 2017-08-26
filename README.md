@@ -1,13 +1,21 @@
-# gatsby-starter-default
-The default Gatsby starter
+# gatsby-portfolio-test
+An example of a portfolio website built using Gatsby.
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
+View the demo: gatsby-portfolio.surge.sh
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
+Ensure you have the Gatsby CLI installed:
 ```
-gatsby new gatsby-example-site
+npm install --global gatsby-cli
 ```
 
-## Deploy
+Clone and install the repository:
+```
+git clone https://github.com/elliotschultz/gatsby-portfolio-test
+cd gatsby-portfolio-test
+npm install
+```
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+Run the development server:
+```
+gatsby develop
+```
