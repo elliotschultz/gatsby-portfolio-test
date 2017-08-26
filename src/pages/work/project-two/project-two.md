@@ -11,8 +11,6 @@ images:
 
 date: '2017-02-01'
 
-video: https://vimeo.com/133396066
-
 ---
 
 ## Brief
