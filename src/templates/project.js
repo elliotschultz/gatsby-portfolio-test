@@ -8,6 +8,19 @@ export default ({ data }) => {
   const post = data.markdownRemark
   console.log(post)
   const featuredImage = post.frontmatter.featuredImage.childImageSharp.responsiveSizes
+  const projectImages = post.frontmatter.images && post.frontmatter.images.map((image, i) => {
+    console.log("image", image)
+    return (
+      <ProjectImage
+        src={image.image.childImageSharp.responsiveSizes.src}
+        srcSet={image.image.childImageSharp.responsiveSizes.srcSet}
+        key={'projectImage-' + i}
+      />
+    )
+  })
+  // console.log(post.frontmatter.images)
+  // console.log(projectImages)
+  // console.log("testing", post.frontmatter.images)
   return (
     <SiteWrapper>
       <Grid>
@@ -29,6 +42,11 @@ export default ({ data }) => {
             <Content dangerouslySetInnerHTML={{ __html: post.html }} />
           </Col>
         </Row>
+        <Row>
+          <Col xs={12}>
+            {projectImages}
+          </Col>
+        </Row>
       </Grid>
     </SiteWrapper>
   )
@@ -40,6 +58,16 @@ export const query = graphql`
       html
       frontmatter {
         title
+        images {
+          image {
+            childImageSharp {
+              responsiveSizes {
+                src
+              }
+            }
+          }
+          description
+        }
         featuredImage {
           childImageSharp {
             responsiveSizes {
@@ -74,6 +102,12 @@ const Title = styled.h1`
 const FeaturedImage = styled.img`
   width: 100%;
   height: auto;
+`
+
+const ProjectImage = styled.img`
+  width: 100%;
+  height: auto;
+  margin-bottom: 6rem;
 `
 
 const Content = styled.div`

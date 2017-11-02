@@ -8,7 +8,7 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
     createNodeField({
       node,
       name: `slug`,
-      value: '/work' + slug,
+      value: node.frontmatter.path ? node.frontmatter.path : slug,
     })
   }
 }

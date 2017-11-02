@@ -1,15 +1,18 @@
 ---
-title: Project Three
-subtitle: Tagline Goes Here
+title: Project One
+subtitle: Catchy Tagline Goes Here
 
-featuredImage: assets/project-three-featured-image.jpg
+featuredImage: assets/project-one-featured-image.jpg
 
 images:
-  - assets/image-a.jpg
-  - assets/image-b.jpg
-  - assets/image-c.jpg
+  - image: assets/image-a.jpg
+    description: "First image"
+  - image: assets/image-b.jpg
+    description: "Second image"
+  - image: assets/image-c.jpg
+    description: "Third image"
 
-date: '2017-03-01'
+date: '2017-01-01'
 
 ---
 

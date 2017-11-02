@@ -1,15 +1,18 @@
 ---
-title: Project Two
-subtitle: Snazzy Tagline Goes Here
+title: Project Three
+subtitle: Tagline Goes Here
 
-featuredImage: assets/project-two-featured-image.jpg
+featuredImage: assets/project-three-featured-image.jpg
 
 images:
-  - assets/image-a.jpg
-  - assets/image-b.jpg
-  - assets/image-c.jpg
+  - image: assets/image-a.jpg
+    description: "First image"
+  - image: assets/image-b.jpg
+    description: "Second image"
+  - image: assets/image-c.jpg
+    description: "Third image"
 
-date: '2017-02-01'
+date: '2017-03-01'
 
 ---
 
